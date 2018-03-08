@@ -1,0 +1,101 @@
+<html>
+<head>
+<title>CampusStory.id</title>
+<link href="CampusStory.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<table height="164" class = "navigation">
+      <th width="100%" height="158" id = "logo" ><center>
+        <span class="tulisan"><span style="font-size: 24px"><img src="Campus Story Baru.png" alt="" width="200" height="93" class = "gambarlogo"></span></span>
+      </center>
+        <p class="tulisan">College Life is Amazing</p></th>
+</table>
+
+<div class = "nav">
+<ul>
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Universitas</a></li>
+  <li><a href ="#">Fakultas</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Story</a>
+    <div class="dropdown-content">
+      <a href="#">Kampus</a>
+      <a href="#">Fakultas</a>
+      <a href="#">Mata Kuliah</a>
+      <a href="#">Kehidupan Mahasiswa</a>
+      <a href="#">Anak Kos</a>
+      <a href="#">Organisasi Mahasiswa</a>
+    </div>
+  </li>
+  <li><a href="#">Artikel</a></li>
+  <li><a href="#">News</a></li>
+</ul>
+</div>
+
+<table class = "bawah">
+  <tr id="SlideShow">
+    <td><div class="slideshow">
+    <div class="MySlides fade">
+      <img src="UGMnew.jpg" style="width:100%">
+      <div class="text"> Universitas Gadjah Mada, Yogyakarta </div>
+    </div>
+    <div class="MySlides fade">
+      <img src="UInew.jpg" style="width:100%">
+      <div class="text"> Universitas Indonesia, Depok </div>
+    </div>
+    <div class="MySlides fade">
+      <img  src="unsri.jpg" style="width:100%">
+      <div class="text"> Universitas Sriwijaya, Palembang </div>
+    </div>
+      <a class="SlideKiri" onclick="plusDivs(-1)">&#10094;</button>
+      <a class="SlideKanan" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+
+    <script>
+    var slideindex = 1;
+    showDivs(slideindex);
+
+    function plusDivs(n){
+      showDivs(slideindex+=n);
+    }
+    function showDivs(n){
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n>x.length){
+        slideindex=1;
+      }
+      if(n<1){
+        slideindex=x.length;
+      }
+      for (i=0 ; i<x.length ; i++){
+        x[i].style.display="none";
+      }
+      x[slideindex-1].style.display="block";
+    }
+  </script>
+    </td>
+  </tr>
+  
+</table>
+<div class = "allbawah">
+<div id="Perkenalan">
+    <center><h1 class="h1_1"> Apa Itu Campus Story? </h1><center>
+        <img src="Campus Story baru.png" width="20%">
+        <p>
+        Campus Story adalah website khusus mahasiswa untuk berbagi cerita mengenai
+        universitas, fakultas, mata kuliah, kehidupan mahasiswa, keorganisasian,
+        hingga anak kos. Kalian dapat dengan mudah membagikan cerita mengenai kampus.
+        Selain itu terdapat banyak info dan tips & trik mengenai kuliah. </p>
+  </div>
+
+<div id="Content">
+<div class="RecentArticle">
+ <center>  <h1> ARTICLE </h1> </center>
+</div>
+<div class="adbx">
+<center> <h2> advertisement </h2> </center>
+</div>
+		</div> </div>
+
+</body>
+</html>
